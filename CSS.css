@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+body {
+    background-color: #121212;
+  }
+  
+  #calculator {
+    width: 400px;
+    height: 570px;
+    margin: 100px auto;
+    background-color: #242424;
+    border: 2px solid #B0E0E6;
+    border-radius: 25px;
+    color: #cdcdcd;
+    box-shadow: 5px 5px 5px #B0E0E6;
+  }
+
+  @font-face {
+    font-family: 'SevenSegment';
+    src: url('./SevenSegment.ttf') format('truetype');
+  }
+  
+  .display {
+    width: 100%;
+    height: 80px;
+    background-color: #121212;
+    font-size: 36px;
+    text-align: right;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    /* font-weight: bolder; */
+    font-family: 'SevenSegment', sans-serif;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+  }
+  
+  button {
+    width: 100%;
+    height: 70px;
+    font-size: 24px;
+    background-color: aliceblue;
+    color: #333;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    filter: drop-shadow(10px 10px 10px rgb(19, 24, 19));
+    font-weight: bolder;
+  }
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  .operator {
+    background-color: #fa7d00;
+    color: #fff;
+  }
+
+  .equals {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
